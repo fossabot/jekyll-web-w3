@@ -1,0 +1,19 @@
+---
+layout: page
+title: Contact
+order: 3
+---
+
+<div class="w3-section w3-animate-bottom">
+<h2>Contact</h2>  
+    <p>In case you want to quick contact me without typing in your e-mail service.</p>
+    <form class="" name="contact" onsubmit="return validateCForm()" action="https://formspree.io/mail@ihosomnam.me" method="POST">
+        <label>Your Name</label>
+        <input class="w3-input w3-border-0" type="text" placeholder="John Doe" name="name">
+        <label>Your E-mail</label>
+        <input class="w3-input w3-border-0" type="text" placeholder="john@doe.me" name="email">
+        <label>Message</label>
+        <input class="w3-input w3-border-0" type="text" placeholder="I want you to..." name="info">
+        <input class="w3-input w3-button w3-border w3-section w3-hover-yellow" type="submit" value="Send">
+    </form>
+</div>

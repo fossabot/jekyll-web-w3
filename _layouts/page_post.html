@@ -1,0 +1,27 @@
+---
+layout: page
+---
+
+{{ content }}
+
+{%- if site.posts.size > 0 -%}
+<h2 class="w3-animate-left">{{ page.list_title | default: "Posts" }}</h2>
+<ul class="w3-ul">
+  {%- for post in site.posts -%}
+  <li>
+    {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+    <span class="w3-animate-right">{{ post.date | date: date_format }}</span>
+    <p>
+      <a class="w3-hover-yellow w3-animate-left" href="{{ post.url | relative_url }}">
+        {{ post.title | escape }}
+      </a>
+    </p>
+    {%- if site.show_excerpts -%}
+      {{ post.excerpt }}
+    {%- endif -%}
+  </li>
+  {%- endfor -%}
+</ul>
+
+<p class="fa fa-rss w3-animate-bottom"> <a href="{{ "/feed.xml" | relative_url }}">RSS</a></p>
+{%- endif -%}
