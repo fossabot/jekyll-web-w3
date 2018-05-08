@@ -1,9 +1,14 @@
 ---
 layout: post
-title:  "Clone Jekyll"
-date:   2018-05-06 22:29:53 +0700
+title:  "Welcome to my new Site!"
+date:   2018-05-08 18:08:13 +0700
 permalink: blog/:title
 ---
 
-This is link test
-[MyBlog](https://ihosomnam.me/)
+# Welcome to My New Site!
+
+Well, this site can't be done if there's no example.
+I have more sites you can visit:
+
+[Another Blog](https://ihosomnam.com)
+[Another Website](https://ihosomnam.website)
