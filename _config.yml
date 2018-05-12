@@ -26,7 +26,7 @@ social:
   Email: mail@ihosomnam.me
 author: Iho Somnam
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://ihosomnam.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 google_analytics: UA-107485569-9
 lang: en
 
