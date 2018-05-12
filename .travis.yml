@@ -7,7 +7,7 @@ before_script: gem install bundler jekyll # or do this locally and commit
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.
 script:
-  - bundler install
+  - bundle install
   - bundle exec jekyll build
 
 # branch whitelist, only for GitHub Pages
