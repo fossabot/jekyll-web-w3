@@ -1,0 +1,51 @@
+---
+layout: page
+---
+
+<h1 class="w3-animate-left" style="text-align: center;">{{ site.title }}</h1>
+<h3 class="w3-animate-right" style="text-align: center;"><q>{{ site.subtitle }}</q></h3>
+<p class="w3-animate-right" style="text-align: center;">{{ site.description }}</p>
+<table class="w3-table-all w3-animate-bottom">
+  {%- if site.social.Instagram -%}
+    <tr>
+        <td><i class="fa fa-instagram fa-lg w3-hover"></i></td>
+        <td>Instagram</td>
+        <td><a href="https://instagram.com/gentiana_siva" class="w3-hover-yellow">/{{ site.social.Instagram }}</a></td>
+    </tr>
+    {%- endif -%}
+    {%- if site.social.Twitter -%}
+    <tr>
+        <td><i class="fa fa-twitter fa-lg w3-hover"></i></td>
+        <td>Twiiter</td>
+        <td><a href="https://twitter.com/iho4741" class="w3-hover-yellow">/{{ site.social.Twitter }}</a></td>
+    </tr>
+    {%- endif -%}
+    {%- if site.social.Reddit -%}
+    <tr>
+        <td><i class="fa fa-reddit fa-lg"></i></td>
+        <td>Reddit</td>
+        <td><a href="https://reddit.com/u/CureliestWalk883" class="w3-hover-yellow">/u/{{ site.social.Reddit }}</a></td>
+    </tr>
+    {%- endif -%}
+    {%- if site.social.Github -%}
+    <tr>
+        <td><i class="fa fa-github fa-lg"></i></td>
+        <td>Github</td>
+        <td><a href="https://github.com/iho4741" class="w3-hover-yellow">/{{ site.social.Github }}</a></td>
+    </tr>
+    {%- endif -%}
+    {%- if site.social.Keybase -%}
+    <tr>
+        <td><i class="fa fa-key fa-lg"></i></td>
+        <td>Keybase</td>
+        <td><a href="https://keybase.io/iho4741" class="w3-hover-yellow">/{{ site.social.Keybase }}</a></td>
+    </tr>
+    {%- endif -%}
+    {%- if site.social.Email -%}
+    <tr>
+        <td><i class="fa fa-envelope fa-lg"></i></td>
+        <td>E-mail</td>
+        <td><a href="mailto:mail@ihosomnam.me" class="w3-hover-yellow">{{ site.social.Email }}</a></td>
+    </tr>
+    {%- endif -%}
+</table>

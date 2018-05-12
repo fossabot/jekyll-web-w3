@@ -14,13 +14,22 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Iho Somnam
-email: mail@ihosomnam.me
-description: >- # this means to ignore newlines until "baseurl:" Leave it! Cause I use HTML FUCKER!
+subtitle: There must be something hidden over you. Try to knock it!
+description: Here you can find me publicly social connection. # this means to ignore newlines until "baseurl:" Leave it! Cause I use HTML FUCKER!
+social:
+  Instagram: gentiana_siva
+  Twitter: iho4741
+  Reddit: CureliestWalk883
+  Github: iho4741
+  Keybase: iho4741
+  Email: mail@ihosomnam.me
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 lang: en
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+show_excerpts: false
 plugins:
   - jekyll-feed
