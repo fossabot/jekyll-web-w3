@@ -68,6 +68,8 @@ a {
 a:active,
 a:hover {
     outline-width: 0
+    color: #000!important;
+    background-color: #ffeb3b!important
 }
 
 abbr[title] {
