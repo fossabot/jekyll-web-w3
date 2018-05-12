@@ -25,8 +25,8 @@ social:
   Keybase: iho4741
   Email: mail@ihosomnam.me
 author: Iho Somnam
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # Please don't add :)
+url: "https://ihosomnam.com" # Add it, for SEO benifit. Use https protocol is recommended.
 google_analytics: UA-107485569-9
 lang: en
 
