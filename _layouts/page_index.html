@@ -34,6 +34,13 @@ layout: page
         <td><a href="https://github.com/{{ site.social.Github }}" class="w3-hover-yellow">/{{ site.social.Github }}</a></td>
     </tr>
     {%- endif -%}
+    {%- if site.social.Steam -%}
+    <tr>
+        <td><i class="fab fa-steam fa-lg"></i></td>
+        <td>Steam</td>
+        <td><a href="https://steamcommunity.com/id/{{ site.social.Steam }}" class="w3-hover-yellow">/id/{{ site.social.Steam }}</a></td>
+    </tr>
+    {%- endif -%}
     {%- if site.social.Keybase -%}
     <tr>
         <td><i class="fab fa-keybase fa-lg"></i></td>

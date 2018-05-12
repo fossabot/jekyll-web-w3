@@ -3,12 +3,12 @@
     <title>{{ page.title }}</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="{{ "assets/css/fontawesome-all.min.css" }}" rel="stylesheet">
-    <link rel="stylesheet" href="{{ site.baseurl }}{{ "assets/css/w3.css" }}">
-    <script src="{{ site.baseurl }}{{ "assets/js/gtag.js" }}"></script>
+    <link href="{{ "assets/css/fontawesome-all.min.css" | relative_url }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ site.baseurl }}{{ "assets/css/w3.css" | relative_url }}">
+    <script src="{{ site.baseurl }}{{ "assets/js/gtag.js" | relative_url }}"></script>
     <script src="{%- include gana.html -%}"></script>
     <meta property="og:title" content="{{ site.title }}" />
-    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ "/assets/images/profile.jpg" }}" />
+    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ "/assets/images/profile.jpg" | relative_url }}" />
     <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}" />
     <!-- <link rel="stylesheet" href="{{ "assets/css/twit.css" }}">
     <link rel="stylesheet" href="{{ "assets/css/diagnostic.css" }}"> -->

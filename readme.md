@@ -12,6 +12,7 @@ social:
   Twitter: iho4741
   Reddit: CureliestWalk883
   Github: iho4741
+  Steam: TheCureliestWalk
   Keybase: iho4741
   Email: mail@ihosomnam.me
 
