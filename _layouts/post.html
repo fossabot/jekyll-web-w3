@@ -1,5 +1,7 @@
 ---
 layout: page
 ---
-
-{{ content }}
+<h1 class="w3-animate-left">{{ page.title | escape }}</h1>
+<div class="w3-animate-right">
+  {{ content | markdownify }}
+</div>

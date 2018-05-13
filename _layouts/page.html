@@ -1,11 +1,14 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en" }}">
 
-<div class="w3-container iho-center">
+  {%- include head.html -%}
+
+<body>
+
+<div class="w3-container iho-center" style="background-color: rgba(255, 255,255, 0.8)">
 
 
-  <img class="w3-image w3-padding w3-card w3-section w3-animate-top" src="{{ "/assets/images/profile.jpg" | relative_url }}" alt="Iho Somnam" />
+  <img class="w3-image w3-padding w3-card w3-section w3-animate-top" src="{{ site.url }}{{ "/assets/images/profile.jpg" | relative_url }}" alt="Iho Somnam" />
 
 
   <div class="w3-bar w3-white w3-border">
@@ -13,7 +16,7 @@ layout: default
 
       {%- for f in iho_page -%}
       {%- unless f.title == false or f.url contains "/404" or f.url contains "/feed" -%}
-    <a class="w3-bar-item w3-button w3-mobile w3-{%- if f.url == page.url -%}black{%- endif -%} {%- if f.url != page.url -%}hover-yellow{%- endif -%}"
+    <a class="w3-bar-item w3-button w3-mobile w3-{%- if page.url == f.url -%}black{%- endif -%} {%- if page.url != f.url -%}hover-yellow{%- endif -%}"
     href="{{ f.url | relative_url }}">{{ f.title | escape }}</a>
     {%- endunless -%}
     {%- endfor -%}
@@ -23,4 +26,8 @@ layout: default
 
   {{ content }}
 
+      {%- include footer.html -%}
+      
 </div>
+</body>
+</html>

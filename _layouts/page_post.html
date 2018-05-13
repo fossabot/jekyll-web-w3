@@ -1,18 +1,22 @@
 ---
 layout: page
+list_title: FUCKER
 ---
 
 {{ content }}
 
 {%- if site.posts.size > 0 -%}
-<h2 class="w3-animate-left">{{ page.list_title | default: "Posts" }}</h2>
+<nav class="w3-animate-left">
+  <h2>{{ page.list_title | default: "Posts" }}</h2>
+  <p class="fa fa-rss w3-animate-bottom" style="text-align: center;"> <a class="w3-hover-yellow" href="{{ "/feed.xml" | relative_url }}">RSS</a></p>
+</nav>
 <ul class="w3-ul">
   {%- for post in site.posts -%}
   <li>
     {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
     <span class="w3-animate-right">{{ post.date | date: date_format }}</span>
     <p>
-      <a class="w3-hover-yellow w3-animate-left" href="{{ post.url | relative_url }}">
+      <a class="w3-hover-yellow w3-animate-left" href="{{ post.url | absolute_url }}">
         {{ post.title | escape }}
       </a>
     </p>
@@ -23,5 +27,4 @@ layout: page
   {%- endfor -%}
 </ul>
 
-<p class="fa fa-rss w3-animate-bottom"> <a class="w3-hover-yellow" href="{{ "/feed.xml" | relative_url }}">RSS</a></p>
 {%- endif -%}

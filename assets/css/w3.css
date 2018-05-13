@@ -3,6 +3,7 @@
 /* Some edited by Iho */
 
 @import url('https://fonts.googleapis.com/css?family=Gothic+A1');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 html {
     box-sizing: border-box
 }
@@ -225,14 +226,16 @@ textarea {
 
 /* End extract */
 
-html,
-body {
-    font-family: Verdana, sans-serif;
+html, body {
+    font-family: "Gothic A1", sans-serif;
     font-size: 15px;
-    line-height: 1.5
+    line-height: 1.5;
 }
 
 html {
+    background-image: url("../images/bg.png");
+    background-position: center top;
+    background-repeat: no-repeat;
     overflow-x: hidden
 }
 
@@ -270,7 +273,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Gothic A1", Verdana, sans-serif;
+    font-family: "Gothic A1", "Montserrat", sans-serif;
     font-weight: 400;
     margin: 10px 0
 }
