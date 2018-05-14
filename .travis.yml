@@ -10,6 +10,7 @@ before_script:
 # the `install` step will run `bundle install` by default.
 script:
   - bundle install
+  - bundle update
   - bundle exec jekyll build
 
 # branch whitelist, only for GitHub Pages
