@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en" }}"
-      style="background-image: url( {{ "/assets/images/bg.png" | escape }} );
-      background-position: center top;
-      background-repeat: no-repeat;">
-
-  {%- include head.html -%}
-
-<body>
+---
+layout: default
+---
 
 <div class="w3-container iho-center" style="background-color: rgba(255, 255,255, 0.95)">
 
@@ -18,8 +12,8 @@
     {%- assign iho_page = site.pages | sort: "order" -%}
 
       {%- for f in iho_page -%}
-      {%- unless f.title == false or f.url contains "/404" or f.url contains "/feed" -%}
-    <a class="w3-bar-item w3-button w3-mobile w3-{%- if page.url == f.url  or f.url contains '/blog' -%}black{%- elsif page.url != f.url -%}hover-yellow{%- endif -%}"
+      {%- unless f.url contains "/404" or f.url contains "/feed" -%}
+    <a class="w3-bar-item w3-button w3-mobile w3-{% if page.url == f.url or page.url contains "/blog/" %}black{% elsif page.url != f.url %}hover-yellow{% endif %}"
     href="{{ f.url | relative_url }}">{{ f.title | escape }}</a>
     {%- endunless -%}
     {%- endfor -%}
@@ -32,5 +26,3 @@
       {%- include footer.html -%}
 
 </div>
-</body>
-</html>
