@@ -2,7 +2,7 @@ language: ruby
 rvm:
 - 2.4
 
-before_script: sudo gem install bundler jekyll # or do this locally and commit
+before_script: # or do this locally and commit
 
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.

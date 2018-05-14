@@ -1,5 +1,5 @@
 # Welcome to Iho Somnam Website Repository!
-[![Build Status](https://travis-ci.com/iho4741/jekyll-web-w3.svg?token=dzmyptNDsvqSxdwzfRTC&branch=master)](https://travis-ci.com/iho4741/jekyll-web-w3)
+[![Build Status](https://travis-ci.org/iho4741/jekyll-web-w3.svg?branch=master)](https://travis-ci.org/iho4741/jekyll-web-w3)
 ###### Crafted by: Iho.
 ---
 This site is powered by [Jekyll](https://jekyllrb.com). You can visit document [here](https://jekyllrb.com/docs/home/). Here you'll find out How to modify it.
