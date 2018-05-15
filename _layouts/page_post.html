@@ -8,7 +8,7 @@ list_title: FUCKER
 {%- if site.posts.size > 0 -%}
 <nav class="w3-animate-left">
   <h2>{{ page.list_title | default: "Posts" }}</h2>
-  <p class="fa fa-rss w3-animate-bottom" style="text-align: center;"> <a class="w3-hover-yellow" href="{{ "/feed.xml" | relative_url }}">RSS</a></p>
+  <i class="fa fa-rss w3-animate-bottom"></i> <a class="w3-hover-yellow" href="{{ "/feed.xml" | relative_url }}">RSS</a>
 </nav>
 <ul class="w3-ul">
   {%- for post in site.posts -%}

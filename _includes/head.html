@@ -5,22 +5,22 @@
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="http://gmpg.org/xfn/11" rel="profile" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#ffeb3b">
     <link rel="apple-touch-icon" sizes="128x128" href="{{ site.url }}{{ "assets/images/profile.jpg" | relative_url }}">
 
     <link href="{{ site.url }}{{ "assets/css/fontawesome-all.min.css" | relative_url }}" rel="stylesheet">
-    <link rel="stylesheet" href="{{ site.url }}{{ "assets/css/w3.css" | relative_url }}">
+    <link href="{{ site.url }}{{ "assets/css/w3.css" | relative_url }}" rel="stylesheet">
     <script src="{{ site.url }}{{ "assets/js/gtag.js" | relative_url }}"></script>
     <script src="{%- include gana.html -%}"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script type="text/javascript" src="{{ "assets/js/shuf.js" }}"></script>
-    <meta property="og:title" content="{{ site.title }}" />
-    <meta property="og:image" content="{{ site.url }}{{ "/assets/images/profile.jpg" | relative_url }}" />
-    <meta property="og:url" content="{{ site.url }}" />
-    <!-- <link rel="stylesheet" href="{{ "assets/css/twit.css" }}">
-    <link rel="stylesheet" href="{{ "assets/css/diagnostic.css" }}"> -->
+    <script type="text/javascript" src="{{ site.url }}{{ "/assets/js/shuf.js" }}"></script>
+    <!-- <link rel="stylesheet" href="{{ "assets/css/diagnostic.css" }}"> -->
     {%- seo -%}
+    <!-- <meta property="og:title" content="{{ site.title }}" />
+    <meta property="og:image" content="{{ site.url }}{{ "/assets/images/profile.jpg" | relative_url }}" />
+    <meta property="og:url" content="{{ site.url | absolute_url }}" /> -->
     {%- feed_meta -%}
 </head>

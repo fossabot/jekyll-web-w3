@@ -12,10 +12,10 @@ layout: default
     {%- assign iho_page = site.pages | sort: "order" -%}
 
       {%- for f in iho_page -%}
-      {%- unless f.url contains "/404" or f.url contains "/feed" -%}
-    <a class="w3-bar-item w3-button w3-mobile w3-{% if page.url == f.url or page.url contains "/blog/" %}black{% elsif page.url != f.url %}hover-yellow{% endif %}"
-    href="{{ f.url | relative_url }}">{{ f.title | escape }}</a>
-    {%- endunless -%}
+        {%- if f.title != null -%}
+    <a class="w3-bar-item w3-button w3-mobile w3-{% if f.url == page.url %}black{% elsif page.url != f.url %}hover-yellow{% endif %}"
+    href="{{ site.baseurl }}{{ f.url | relative_url }}">{{ f.title | escape }}</a>
+        {%- endif -%}
     {%- endfor -%}
 
   </div>
@@ -24,5 +24,6 @@ layout: default
   {{ content }}
 
       {%- include footer.html -%}
+
 
 </div>

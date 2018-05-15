@@ -30,6 +30,8 @@ lang: en
 background:
   File: # Not Specified. ex. /assets/images/bg.png
 
+Postlink: true
+
 #Default settings
 baseurl: "" # Please don't add :)
 url: "" # Add it, for SEO benifit. Use https protocol is recommended.
