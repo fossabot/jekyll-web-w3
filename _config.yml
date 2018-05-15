@@ -25,11 +25,14 @@ social:
   Keybase: iho4741
   Email: mail@ihosomnam.me
 author: Iho Somnam
-baseurl: "" # Please don't add :)
-url: "" # Add it, for SEO benifit. Use https protocol is recommended.
 google_analytics: UA-107485569-9
 lang: en
+background:
+  File: # Not Specified. ex. /assets/images/bg.png
 
+#Default settings
+baseurl: "" # Please don't add :)
+url: "" # Add it, for SEO benifit. Use https protocol is recommended.
 # Build settings
 markdown: kramdown
 highlighter: rouge

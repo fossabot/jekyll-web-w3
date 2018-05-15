@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en" }}"
-      style="background-image: url( {{ "/assets/images/bg.png" | escape }} );
+      {%- if site.background.File -%}
+      style="background-image: url( {{ site.background.File }} );
       background-position: center top;
       background-attachment: fixed;
       background-repeat: no-repeat;">
+      {%- endif -%}
 
   {%- include head.html -%}
 
