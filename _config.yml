@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Iho Somnam
-subtitle: My private exposed again! Fuck, but can't 'fuck' with it!
+subtitle: My privacy exposed again! Fuck, but can't 'fuck' with it!
 description: Here you can find me publicly social connection. # this means to ignore newlines until "baseurl:" Leave it! Cause I use HTML FUCKER!
 social:
   Instagram: gentiana_siva
