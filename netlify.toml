@@ -1,0 +1,6 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "ALLOW"
+    X-XSS-Protection = "1; mode=block"
+    I-Powered-By = "Iho"
