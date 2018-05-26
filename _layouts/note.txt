@@ -1,0 +1,27 @@
+-----
+THIS IS FOR DEVELOPMENT ONLY
+-----
+
+
+
+<div class="w3-panel w3-blue">
+  <h2>Debugging Panel</h2>
+  <hr>
+  {%- assign iho_pagetitle = pages.url -%}
+  <p>{{ iho_pagetitle }}</p>
+  <hr>
+  {%- for f in iho_page -%}
+  <p>TEST --> {{ f.url }}</p>
+  {%- endfor -%}
+  <hr>
+
+  <p>site.url --> {{ site.url }}</p>
+  <p>site.page --> NOT DEFINED</p>
+  <p>site.pages --> {{ site.pages }}</p>
+  <p>page.url --> absolute_url | {{ page.url | absolute_url }}</p>
+  <p>page.url -->{{ page.url }}</p>
+  <p>page.title --> {{ page.title }}</p>
+  <p>page.title --> absolute_url | {{ page.title | absolute_url }}</p>
+
+
+</div>
