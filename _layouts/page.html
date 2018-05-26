@@ -12,7 +12,7 @@ layout: default
     {%- assign iho_page = site.pages | sort: "order" -%}
 
       {%- for f in iho_page -%}
-      {%- unless f.title == false or f.url contains "/404" or f.url contains "/feed" -%}
+      {%- unless f.title == false or f.url contains "/404" or f.url contains "/feed" or f.url contains "/css" -%}
     <a class="w3-bar-item w3-button w3-mobile w3-{%- if f.url == page.url -%}black{%- endif -%} {%- if f.url != page.url -%}hover-yellow{%- endif -%}"
     href="{{ f.url | relative_url }}">{{ f.title | escape }}</a>
     {%- endunless -%}
