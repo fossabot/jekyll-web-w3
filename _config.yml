@@ -29,11 +29,8 @@ social:
   Keybase: iho4741
   Email: mail@ihosomnam.me
 author: Iho Somnam
-<<<<<<< HEAD
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-=======
->>>>>>> 72cf789a0225f229d3ee7984bd68b67705c4cad1
 google_analytics: UA-107485569-9
 lang: en
 background:
