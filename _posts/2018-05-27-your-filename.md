@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Light is on the Bridge"
-date:   2018-05-027 22:14:23 +0700
+date:   2018-05-27 22:14:23 +0700
 permalink: 'blog/:title'
 ---
 
@@ -32,4 +32,4 @@ Markdown | Less | Pretty
 1 | 2 | 3
 
 
-[![]](https://streamable.com/pihsc)
+[![](https://cdn-b-east.streamable.com/image/pihsc.jpg)](https://streamable.com/pihsc)
