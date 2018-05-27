@@ -1,8 +1,10 @@
 ---
 layout: post
 title: "Light is on the Bridge"
+date:   2018-05-027 22:14:23 +0700
 permalink: 'blog/:title'
 ---
+
 ## Light is on the Bridge
 > Going down, looking down. Explore the world!
 This is the words I just thought.
