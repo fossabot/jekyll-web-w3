@@ -1,5 +1,8 @@
 # Welcome to Iho Somnam Website Repository!
 [![Build Status](https://travis-ci.com/iho4741/jekyll-web-w3.svg?token=dzmyptNDsvqSxdwzfRTC&branch=master)](https://travis-ci.com/iho4741/jekyll-web-w3)
+[![security](https://hakiri.io/github/iho4741/jekyll-web-w3/master.svg)](https://hakiri.io/github/iho4741/jekyll-web-w3/master)
+[![Maintainability](https://api.codeclimate.com/v1/badges/32bcfee22d3d08baa6e4/maintainability)](https://codeclimate.com/github/iho4741/jekyll-web-w3/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/32bcfee22d3d08baa6e4/test_coverage)](https://codeclimate.com/github/iho4741/jekyll-web-w3/test_coverage)
 ###### Crafted by: Iho.
 ---
 This site is powered by [Jekyll](https://jekyllrb.com). You can visit document [here](https://jekyllrb.com/docs/home/). Here you'll find out How to modify it.

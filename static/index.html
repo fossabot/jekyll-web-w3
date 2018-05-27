@@ -4,18 +4,40 @@
 <head>
   <meta charset="utf-8">
   <title>IJO</title>
-  <script src="https://unpkg.com/chaffle/chaffle.min.js"></script>
-  <script src="script.js"></script>
+  <script src="chaffle.min.js"></script>
+  <script>
+    var elements = document.querySelectorAll('[data-chaffle]');
+    var elm = document.querySelectorAll('[data-chaffle-onLoad]');
+
+    Array.prototype.forEach.call(elements, function (el) {
+      var chaffle = new Chaffle(el)
+      el.addEventListener('mouseover', function () {
+        chaffle.init();
+      });
+    });
+
+    Array.prototype.forEach.call(elm, function (el) {
+      var chaffle = new Chaffle(el, {
+        delay: 200
+      })
+      setInterval(function(){
+        chaffle.init();
+      }, 8000)
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js" integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <p data-chaffle-speed="100" data-chaffle-delay="200" data-chaffle="en">English</p>
+	<div>
+  <p data-chaffle data-chaffle-onLoad data-chaffle="en">English</p>
   <p data-chaffle="ja">日本語</p>
   <p data-chaffle="ja-hiragana">ひらがな</p>
   <p data-chaffle="ja-katakana">カタカナ</p>
   <p data-chaffle="ua">Українська</p>
   <!-- data options -->
   <p data-chaffle="en" data-chaffle-speed="100" data-chaffle-delay="200">Data options</p>
+  </div>
 </body>
 
 </html>
