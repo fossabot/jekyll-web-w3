@@ -1,5 +1,7 @@
 ---
-published: false
+layout: post
+title: "Light is on the Bridge"
+permalink: 'blog/:title'
 ---
 ## Light is on the Bridge
 > Going down, looking down. Explore the world!
